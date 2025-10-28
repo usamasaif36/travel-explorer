@@ -1,0 +1,86 @@
+/* GLOBAL STYLE */
+body {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  background-color: #f9fafc;
+}
+
+/* GLASS NAVBAR */
+.glass-nav {
+  background: rgba(0, 123, 255, 0.85);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffdd57 !important;
+}
+
+/* HERO SECTION */
+.hero {
+  height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+    url('images/hero-bg.jpg') center/cover no-repeat;
+  padding-top: 80px;
+}
+
+.hero h1,
+.hero p {
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
+}
+
+/* TEXT EFFECTS */
+.text-gradient {
+  background: linear-gradient(90deg, #007bff, #00c6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* CARDS */
+.card {
+  border: none;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Ensure all recommendation images are same height and width */
+.destination-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover; /* Keeps proportions while cropping neatly */
+  border-radius: 10px;
+}
+
+
+
+/* FOOTER */
+footer {
+  letter-spacing: 0.5px;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade {
+  animation: fadeIn 1.5s ease;
+}
+
+.animate-fade-delay {
+  animation: fadeIn 2s ease;
+}
